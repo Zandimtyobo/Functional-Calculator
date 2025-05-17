@@ -1,0 +1,75 @@
+/* Reset & Basic Setup */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f3f3f3;
+}
+
+.container {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    width: 300px;
+}
+
+/* Display */
+.calc-text {
+    margin-bottom: 15px;
+}
+
+#user-input {
+    width: 100%;
+    height: 60px;
+    font-size: 2rem;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    text-align: right;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Buttons */
+.calc-keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    height: 60px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.key-others {
+    background-color: #ff9f43;
+    color: #fff;
+}
+
+.key-operate {
+    background-color: #1e90ff;
+    color: #fff;
+}
+
+.numbers, .key-zero {
+    background-color: #2f3640;
+    color: #fff;
+}
+
+.key-zero {
+    grid-column: span 2; /* Make "0" span two columns */
+}
